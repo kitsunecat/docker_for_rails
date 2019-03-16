@@ -9,7 +9,7 @@
 `docker-compose build`
 
 ## プロジェクト作成
-`dcrun web rails new . ＜プロジェクト名＞ --skip-gemfile`
+`docker-compose run --rm web rails new . ＜プロジェクト名＞ --skip-gemfile`
 - 途中ででてくる確認は全部`n`ですすめる
 
 ## docker起動
