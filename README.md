@@ -2,6 +2,9 @@
 ## git cloneせにゃ
 `git clone git@github.com:kitsunecat/docker_for_rails.git`
 
+## ディレクトリ移動
+`cd docker_for_rails`
+
 ## とりあえずdockerビルド
 `docker-compose build`
 
