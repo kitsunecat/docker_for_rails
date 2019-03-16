@@ -1,7 +1,7 @@
 # docker_for_railsの使い方
 
 ## とりあえずdockerビルド
-'docker-compose build'
+`docker-compose build`
 
 ## プロジェクト作成
 `dcrun web rails new . ＜プロジェクト名＞ --skip-gemfile`
