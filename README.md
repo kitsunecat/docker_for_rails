@@ -1,6 +1,6 @@
 # docker_for_railsの使い方
 ## git cloneせにゃ
-`git@github.com:kitsunecat/docker_for_rails.git`
+`git clone git@github.com:kitsunecat/docker_for_rails.git`
 
 ## とりあえずdockerビルド
 `docker-compose build`
