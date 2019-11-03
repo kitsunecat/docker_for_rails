@@ -8,10 +8,6 @@
 ## とりあえずdockerビルド
 `docker-compose build`
 
-## プロジェクト作成
-`docker-compose run --rm web rails new . ＜プロジェクト名＞ --skip-gemfile`
-- 途中ででてくる確認は全部`n`ですすめる
-
 ## docker起動
 `docker-compose up`
 - オプション`-d`をつけたらバックグラウンド起動
