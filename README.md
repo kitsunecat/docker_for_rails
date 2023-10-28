@@ -1,25 +1,50 @@
-# docker_for_railsの使い方
-## git cloneせにゃ
-`git clone git@github.com:kitsunecat/docker_for_rails.git`
+# README
 
-## ディレクトリ移動
-`cd docker_for_rails`
+## Versions
 
-## とりあえずdockerビルド
-`docker-compose build`
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-## docker起動
-`docker-compose up`
-- オプション`-d`をつけたらバックグラウンド起動
-- `docker-compose down`でdocker停止
+Things you may want to cover:
 
-## アクセスして確認
-http://0.0.0.0:3000 にアクセスしてYay!の画面が出てくるはず
+- Ruby version
+  3.2.2
 
-## こんなときはもう一度dockerビルド
-- gemの追加（Gemfileの変更）
-- ミドルウェア等の追加(apt-getで追加するなど)
+- Rails version
+  7.1.1
 
-### ミドルウェアの追加について
-Dockerfileの7行目あたりから
-`RUN apt-get -y install <追加するアプリ名>`みたいな感じで追加してからビルドしなおしてください
+## How to run
+
+- Pull repository
+
+```
+  git clone git@github.com:kitsunecat/docker_for_rails.git && cd docker_for_rails
+```
+
+- Docker build
+
+```
+  docker compose build
+```
+
+- Database creation
+
+```
+  docker compose run --rm web bundle exec rails db:create
+```
+
+- Database initialization
+
+```
+  docker compose run --rm web bundle exec rails db:migrate
+```
+
+- Docker up
+
+```
+  docker compose up
+```
+
+-
+
+access http://0.0.0.0:3000
