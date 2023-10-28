@@ -95,6 +95,9 @@ GEM
     connection_pool (2.4.1)
     crass (1.0.6)
     date (3.3.3)
+    debug (1.8.0)
+      irb (>= 1.5.0)
+      reline (>= 0.3.1)
     drb (2.1.1)
       ruby2_keywords
     erubi (1.12.0)
@@ -138,6 +141,10 @@ GEM
       net-protocol
     nio4r (2.5.9)
     nokogiri (1.15.4-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.15.4-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     pg (1.5.4)
     psych (5.1.1.1)
@@ -183,7 +190,7 @@ GEM
       rake (>= 12.2)
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
-    rake (13.0.6)
+    rake (13.1.0)
     rdoc (6.5.0)
       psych (>= 4.0.0)
     regexp_parser (2.8.2)
@@ -230,10 +237,13 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
   capybara
+  debug
   importmap-rails
   jbuilder
   pg (~> 1.1)
@@ -243,10 +253,11 @@ DEPENDENCIES
   sprockets-rails
   stimulus-rails
   turbo-rails
+  tzinfo-data
   web-console
 
 RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.3.5
+   2.4.21
